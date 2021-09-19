@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Lab Orders</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <h1>New Patient Form</h1>
+    <h3>Add</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <input type="text" id="fName" placeholder="First Name">
+        <input type="text" id="lName" placeholder="Last Name">
+        <input type="date" id="DOB" />
+        <input type="submit" value="Add">
+    </form>
+
+    <!--<table>
+        <tr>
+            <th>Is Complete?</th>
+            <th>Name</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="todos"></tbody>
+    </table>-->
+
+<script src="js/site.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    getItems();
+</script>
+</body>
+</html>
